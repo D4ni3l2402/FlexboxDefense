@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/style/game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <label class="logo">FlexBox Defence</label>
+                <a href="index.html" class="home">Zurück zur Startseite</a>
+                <ul>
+                    <li id="restart"><a href="#chapter-about">Neustart</a></li>
+                    <!-- <li><a href="#chapter-about">Hilfe</a></li> -->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="info">
+
+                <div class="level-info">
+                    <!-- Für das Symbol "<" -->
+                    <h1 class="clickable cLeft"> < </h1>
+                            <h1 class="level">Level <span class="currentLevel"></span>/10</h1>
+                            <h1 class="clickable cRight">></h1>
+                            <p>Turrets: <span class="placedTurrets"></span>/<span class="maxTurrets"></span></p>
+                </div>
+
+                <div class="defense-container">
+                    <h3 class="headline">Defense:</h3>
+                    <div class="defense-images entity-images">
+                        <div class="defense entites">
+                            <img src="../assets/Turret-01.png" alt="Geschütz 1" class="defense-img turret-01">
+
+                            <p>Defense 1</p>
+                        </div>
+                        <div class="defense entites">
+                            <img src="../assets/Turret-02.png" alt="Geschütz 2" class="defense-img turret-02">
+
+                            <p>Defense 2</p>
+
+                        </div>
+                        <div class="defense entites">
+                            <img src="../assets/Turret-03.png" alt="Geschütz 3" class="defense-img turret-03">
+
+                            <p>Defense 3</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="enemy-container entity-container">
+                    <h3 class="headline">Gegner:</h3>
+                    <div class="enemy-images entity-images">
+                        <div class="enemy-img entites">
+                            <img src="../assets/Blue_Walk_Gif.gif" alt="Enemy 3">
+
+                            <p>Gegner 1</p>
+                        </div>
+                        <div class="enemy-img entites">
+                            <img src="../assets/Green_Walk_Gif.gif" alt="Enemy 3">
+
+                            <p>Gegner 2 </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="description">
+                    <p>Bitte setzen Sie die geforderte Anzahl an Turrets</p>
+                    <p>Nachdem sie die Turrets gesetzt haben, geben sie ein Flex-Befehl</p>
+                    <p>Bsp.: justify-content:flex-start</p>
+                    <p>Für eine groeßere Herausforderung, schreiben Sie align-items: center unter justify-content</p>
+
+                </div>
+            </div>
+            <div class="gameField-container">
+
+                <div class="gameField">
+                </div>
+
+                <div class="enemyField">
+
+                </div>
+            </div>
+
+            <!-- Code Edior -->
+            <div class="codeEditor">
+                <div class="codeFlex">
+                    <div class="codeLine">
+                        <div class="codeNumber">1</div>
+                        <div class="codeNumber">2</div>
+                        <div class="codeNumber">3</div>
+                        <div class="codeNumber">4</div>
+                        <div class="codeNumber">5</div>
+                        <div class="codeNumber">6</div>
+                        <div class="codeNumber">7</div>
+                    </div>
+                    <div class="codePseudo">
+                        <code>
+                            <pre class="codeText">#spielfeld {</pre>
+                            <pre class="codeText">display: flex;</pre>
+                            <textarea class="codeTextArea" placeholder="Gebe hier dein Code ein..." spellcheck="false"></textarea>
+                            <pre class="codeText">}</pre>
+                        </code>
+
+                        <button class="checkCode">Ausführen</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notifyContainer">
+            </div>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js"></script>
+    <script src="../src/script/game.js"></script>
+</body>
+
+</html>

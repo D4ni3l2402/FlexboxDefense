@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Defence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headFix">
+            <nav>
+                <label class="logo">FlexBox Defense</label>
+
+                <div class="titleScreen">
+                    <img src="../assets/Turret-01.png" class="turret">
+                    <div class="bullet">
+                        <img class="bulletImage" src="../assets/Munition_Blau.gif">
+                    </div>
+
+                </div>
+
+                <div class="iconHam nav-icon">
+                    <span class="iconPartI"></span>
+                    <span class="iconPartII"></span>
+                    <span class="iconPartIII"></span>
+                </div>
+
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-ref" href="#chapter-about">Über Uns</a></li>
+                    <li class="nav-item"><a class="nav-ref" href="#chapter-flexbox">Flexbox</a></li>
+                    <li class="nav-item"><a class="nav-ref" href="#chapter-target">Zielgruppe</a></li>
+                    <li class="nav-item"><a class="nav-ref" href="#chapter-demo">Live-Demo</a></li>
+                    <li class="nav-item"><a class="nav-ref" href="game.html" id="lastButton">Spielen</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="title-container">
+
+        <div class="start">
+            <h1>Willkommen </h1>
+            <h1>bei </h1>
+            <h1>Flexbox </h1>
+            <h1>Defense </h1>
+        </div>
+    </div>
+
+    <div class="videoContainer">
+        <video class="bg-video" muted="muted" preload="auto" autoplay="autoplay" loop="loop">
+            <source src="../assets/Sequence_01.mp4" type="video/mp4">
+
+        </video>
+    </div>
+
+    <div class="wrapper">
+        <div class="content">
+
+            <!-- aboutflex -->
+
+            <div class="aboutflex">
+                <div class="headline" id="chapter-about">
+
+                    <h2>Über Flexbox Defence</h2>
+
+                </div>
+                <div class="aboutflex-container">
+                    <div class="vidShow-container">
+                        <video class="show-video" muted="muted" preload="auto" autoplay="autoplay" loop="loop">
+                            <source src="../assets/Banner_Video.mp4" type="video/mp4">
+
+                        </video>
+                    </div>
+                    <div class="text">
+                        Das Hauptkonzept von Flexbox basiert auf der Idee von flexiblen Containern und flexiblen
+                        Elementen.
+                        Ein Container wird durch das CSS-Attribut "display: flex;" zu einem flexiblen Container gemacht.
+                        Die darin enthaltenen Elemente werden dann zu flexiblen Elementen, die sich entsprechend den
+                        Flexbox-Regeln verhalten. <br><br>
+
+                        Hier sind einige grundlegende Eigenschaften und Konzepte von Flexbox:<br>
+
+                        <div class="accordion">
+                            <div class="accordion-open">
+                                <div class="colored-underline">
+                                    Hauptachse und Nebenachse:
+                                    <div class="arrow">
+                                        <span class="line-top line"></span>
+                                        <span class="line-bottom line"></span>
+                                    </div>
+                                </div>
+
+                                <ul id="panel1" class="panel">
+                                    <li>Die Flexbox hat eine Hauptachse und eine Nebenachse.</li>
+                                    <li>Die Hauptachse ist die Richtung, in der die flexiblen Elemente ausgerichtet
+                                        werden, und kann horizontal (row) oder vertikal (column) sein.</li>
+                                    <li>Die Nebenachse steht senkrecht zur Hauptachse.</li><br>
+                                </ul>
+                            </div>
+
+                            <div class="accordion-open">
+                                <div class="colored-underline">Justieren und
+                                    ausrichten:
+                                    <div class="arrow">
+                                        <span class="line-top line"></span>
+                                        <span class="line-bottom line"></span>
+                                    </div>
+                                </div>
+
+                                <ul id="panel2" class="panel">
+                                    <li>Mit Flexbox können Sie die Ausrichtung von Elementen in Bezug auf die Hauptachse
+                                        (justify-content) und die Nebenachse (align-items) steuern.</li>
+                                    <li>Diese Eigenschaften ermöglichen es, Elemente zu zentrieren, zu verteilen oder
+                                        auszurichten.</li><br>
+                                </ul>
+                            </div>
+
+                            <div class="accordion-open">
+                                <div class="colored-underline">Flexibles
+                                    Layout:
+                                    <div class="arrow">
+                                        <span class="line-top line"></span>
+                                        <span class="line-bottom line"></span>
+                                    </div>
+                                </div>
+
+                                <ul id="panel3" class="panel">
+                                    <li>Flexible Elemente können ihre Größe automatisch anpassen, um den verfügbaren
+                                        Platz im Container optimal zu nutzen.</li>
+                                    <li>Flexbox bietet Eigenschaften wie "flex-grow", "flex-shrink" und "flex-basis", um
+                                        das Verhalten der Elemente zu steuern.</li><br>
+                                </ul>
+                            </div>
+
+                            <div class="accordion-open">
+                                <div class="colored-underline">Reihenfolge
+                                    anpassen:
+                                    <div class="arrow">
+                                        <span class="line-top line"></span>
+                                        <span class="line-bottom line"></span>
+                                    </div>
+                                </div>
+                                <ul id="panel4" class="panel">
+                                    <li>Mit der Eigenschaft "order" können Sie die Reihenfolge der flexiblen Elemente
+                                        ändern, unabhängig von ihrer ursprünglichen Position im HTML-Dokument.</li><br>
+                                </ul>
+                            </div>
+
+                            <div class="accordion-open">
+                                <div class="colored-underline">Ausrichtung von
+                                    Elementen:
+                                    <div class="arrow">
+                                        <span class="line-top line"></span>
+                                        <span class="line-bottom line"></span>
+                                    </div>
+                                </div>
+
+                                <ul id="panel5" class="panel">
+                                    <li>Flexbox ermöglicht es, Elemente entlang der Hauptachse oder Nebenachse zu
+                                        zentrieren oder zu verteilen, was besonders nützlich ist, wenn verschiedene
+                                        Bildschirmgrößen berücksichtigt werden müssen.</li><br>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WasFlexboxSection -->
+
+                <div class="flexbox">
+                    <div class="headline" id="chapter-flexbox">
+                        <h2>Was ist Flexbox</h2>
+                    </div>
+                    <div class="flexbox-container">
+                        <div class="slider-container">
+                            <img src="../assets/image1.jpg" alt="Bild1" class="img-slider">
+
+                            <div class="slider-dots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="arrow prev">&lt;</div>
+                            <div class="arrow next">&gt;</div>
+                        </div>
+                        <div class="text">
+                            <p>Flexbox ist ein Layout-System in CSS für Websites. Stell dir vor, du moechtest Elemente
+                                auf
+                                deiner Seite anordnen, und Flexbox hilft dir dabei, dies einfacher zu tun.</p>
+
+                            <p>Du hast einen Container, der die Hauptbox ist. Innerhalb dieser Box platziert Flexbox
+                                deine
+                                Elemente, die flexibel und anpassungsfähig sind.</p>
+
+                            <p>Mit Flexbox kannst du bestimmen, wie diese Elemente in einer Zeile oder Spalte angeordnet
+                                werden
+                                sollen. Du kannst sie zentrieren, auseinanderziehen oder in anderer Weise organisieren,
+                                um
+                                das
+                                gewünschte Layout zu erreichen.</p>
+
+                            <p>Es macht das Layout-Design flexibel und reagiert auf verschiedene Bildschirmgrößen, was
+                                es
+                                besonders praktisch fuer Webseiten macht, die auf verschiedenen Geraeten gut aussehen
+                                sollen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zielgruppe -->
+
+                <div class="zielgruppe">
+                    <div class="headline" id="chapter-target">
+                        <h2>Zielgruppe</h2>
+                    </div>
+
+                    <div class="zielWrap">
+                        <div class="zielgruppe-container">
+                            <h2 class="text-center">Fuer wen eignet sich das Spiel?</h3>
+
+
+                                <div class="interessierte-headline">
+                                    <h2>Interessierte</h2>
+                                </div>
+                                <div class="interessierte">
+                                    <div class="text">
+                                        <p>Für alle, die neugierig auf die Möglichkeiten von Flexbox sind, öffnet diese
+                                            Sektion die
+                                            Tür zu einer faszinierenden Reise.</p>
+
+                                        <p>Egal, ob du Designer, Entwickler oder einfach ein Technologie-Enthusiast bist
+                                            entdecke,
+                                            wie Flexbox die Art und Weise, wie wir Webseiten gestalten, revolutioniert.
+                                        </p>
+
+                                        <p>Unsere Ressourcen bieten einen leichten Einstieg in die Grundlagen und
+                                            inspirieren dazu,
+                                            mehr über die Vielseitigkeit von Flexbox zu erfahren. </p>
+
+                                        <p>Mach den ersten Schritt und lass dich von der Flexbox-Magie verzaubern!</p>
+                                    </div>
+
+                                    <img src="../assets/Asset_64x.png" class="zielgrupp-logo">
+
+                                </div>
+
+                                <div class="einsteiger-headline">
+                                    <h2 class="text-center">Einsteiger</h2>
+                                </div>
+                                <div class="einsteiger">
+
+                                    <img src="../assets/Asset_54x.png" class="zielgrupp-logo">
+
+                                    <div class="text">
+                                        <p>In dieser Sektion findest du alles, was du brauchst, um ein solides Fundament
+                                            in
+                                            Flexbox
+                                            zu legen.</p>
+
+                                        <p>Strukturierte Lernpfade führen dich durch die Grundlagen, während interaktive
+                                            Übungen und
+                                            praxisnahe Beispiele sicherstellen, dass du das Gelernte direkt anwenden
+                                            kannst.
+                                        </p>
+
+                                        <p> Von einfachen Layouts bis hin zu komplexeren Strukturen – werde zum
+                                            Flexbox-Meister und
+                                            gestalte Webseiten mit Leichtigkeit. </p>
+
+                                        <p> Beginne deine Reise hier und lass Flexbox zu einem unverzichtbaren Werkzeug
+                                            in
+                                            deinem
+                                            Entwicklungsarsenal werden. </p>
+                                    </div>
+
+                                </div>
+
+                                <div class="studenten-headline">
+                                    <h2>Studenten</h2>
+                                </div>
+                                <div class="studenten">
+
+                                    <div class="text">
+                                        <p>Für Studenten, die ihre Fähigkeiten erweitern und innovative Projekte
+                                            realisieren
+                                            wollen,
+                                            ist diese Sektion der ideale Ausgangspunkt. </p>
+
+                                        <p>Nutze unsere studentenfreundlichen Ressourcen, um Flexbox in deine
+                                            Studienprojekte zu
+                                            integrieren und inspirierende Layouts zu gestalten. </p>
+
+                                        <p>Teile deine Erfahrungen mit Gleichgesinnten in der Community und finde
+                                            heraus,
+                                            wie
+                                            Flexbox nicht nur deine Projekte, sondern auch deine kreativen Ideen auf ein
+                                            neues Level
+                                            heben kann. </p>
+
+                                        <p>Entdecke, wie Flexbox deine Studienzeit bereichern kann – sei kreativ, sei
+                                            inspiriert,
+                                            sei Flexbox-Ready! </p>
+                                    </div>
+
+                                    <img src="../assets/Asset_44x.png" class="zielgrupp-logo">
+
+                                </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Live-Demo -->
+
+                <div class="livedemo">
+                    <div class="headline" id="chapter-demo">
+                        <h2>Live-Demo</h2>
+                    </div>
+
+                    <div class="livedemo-container">
+                        <div class="livedemo-headline">
+                            <h3>Wie funktioniert Live-Demo</h3>
+                            <div class="demoHelpContainer">
+                                <img src="../assets/questionmark.png" class="q-logo">
+                                <div class="demoHelp">
+                                    Bitte wähle ein Wert fuer justify-content und align-items und dann drücke auf
+                                    "Starten"
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="livedemo-test">
+
+
+
+                            <div class="flex-options">
+
+                                <div class="dropdown">
+                                    <div class="jf-content">justify-content: <span class="choice"></span></div>
+                                    <div class="select" id="select-jf">
+
+                                        <div class="selected jf-selected">---</div>
+                                        <ul class="menu">
+                                            <li>flex-start</li>
+                                            <li>flex-end</li>
+                                            <li>center</li>
+                                            <li>space-between</li>
+                                            <li>space-around</li>
+                                            <li>space-even</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                                <div class="dropdown">
+                                    <div class="align-content">align-items: <span class="choice"></span></div>
+                                    <div class="select" id="select-a">
+
+                                        <div class="selected align-selected">---</div>
+                                        <ul class="menu">
+                                            <li>flex-start</li>
+                                            <li>flex-end</li>
+                                            <li>center</li>
+                                            <!-- <li>stretch</li> -->
+                                            <!-- <li>baseline</li> -->
+                                            <!-- <li>space-even</li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="btn">Starten</button>
+                            </div>
+
+                            <div class="ergbenis">
+                                <div class="box lol"></div>
+                                <div class="box 2"></div>
+                                <div class="box 3"></div>
+                                <div class="box 4"></div>
+                                <div class="box 5"></div>
+                                <div class="box 6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+
+            <div class="textSection">
+                <p>Entwickelt von Jehee Han, Daniel Moeller, Geronimo Harth</p>
+
+                <p>© Copyright 2023. All rights reserved.</p>
+            </div>
+
+            <div class="socialLinks">
+                <a href="https://www.instagram.com/" target="_blank"> <img src="../assets/instagram_icon.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"> <img src="../assets/facebook_icon.png"></a>
+                <a href="https://www.linkedin.com/" target="_blank"> <img src="../assets/Linkedin_icon.png"></a>
+                <a href="https://www.twitter.com/" target="_blank"> <img src="../assets/twitter_icon.png"></a>
+            </div>
+        </footer>
+
+        <script src="../src/script/script.js"></script>
+
+</body>
+
+</html>
