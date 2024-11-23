@@ -227,7 +227,7 @@ main {
   position: relative;
   top: 10px;
   overflow: hidden;
-  background-image: url("../../assets/Background_Neu_Test.png");
+  background-image: url("./assets/Background_Neu_Test.png");
   border-radius: 15px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
   background-color: #DAB32B;
